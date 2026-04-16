@@ -188,16 +188,26 @@
         <div class="footer-section">
             <h4>Enlaces</h4>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Habitaciones</a></li>
-                <li><a href="#">Reservas</a></li>
+                <li><a id="idlogo" href="{{ url_for('index') }}"><div class="logo">Inicio</div></a></li>
+                <li><a id="idlogo" href="{{ url_for('habitaciones') }}"><div class="logo">Habitaciones</div></a></li>
+                <li><a id="idlogo" href="{{ url_for('reservas') }}"><div class="logo">reservas</div></a></li>
             </ul>
         </div>
 
         <div class="footer-section">
             <h4>Contacto</h4>
-            <p>Email: info@hotel.com</p>
-            <p>Tel: +57 300 000 0000</p>
+            <p>
+                Email:
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@hotel.com" target="_blank">
+                        info@hotel.com
+                    </a>
+            </p>
+            <p>
+                Tel: 
+                    <a href="https://wa.me/573000000000" target="_blank">
+                        +57 300 000 0000
+                    </a>
+            </p>
         </div>
 
     </div>
