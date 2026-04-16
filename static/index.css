@@ -140,6 +140,9 @@ input, select{
     align-items: stretch; 
 }
 
+.card:hover{
+transform:translateY(-8px);
+}
 .card{
     display: flex;
     flex-direction: column;
@@ -442,7 +445,7 @@ button{
 .footer {
     background-color: rgba(139, 70, 10, 0.796);;
     color: white;
-    padding: 40px 20px 20px;
+     padding: 20px 80px;
     font-family: Arial, sans-serif;
 }
 
