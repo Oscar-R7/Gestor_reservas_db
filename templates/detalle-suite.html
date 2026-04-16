@@ -13,7 +13,11 @@
         <div class="logo">Hotel Paradise</div>
         <nav>
             <a class="menu" href="{{ url_for('habitaciones') }}">habitaciones</a>
-            <a href="{{ url_for('reservas') }}">Mis reservas</a>
+            {% if session.get('usuario_id') %}
+                <a href="{{ url_for('reservas') }}">Mis reservas</a>
+            {% else %}
+                <a href="javascript:void(0)" onclick="abrirLogin()">Mis reservas</a>
+            {% endif %}
         </nav>
     </header>
 
