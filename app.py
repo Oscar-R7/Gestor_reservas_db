@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, flash, session, redirect, url
 from flask_mysqldb import MySQL
 from functools import wraps
 
-
+# esto es un comentario de prueba
 app = Flask(__name__)
 app.secret_key = '123456'
 
