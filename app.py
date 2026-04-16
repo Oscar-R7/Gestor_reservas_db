@@ -71,6 +71,7 @@ def confirmar_reserva():
             session['usuario_email']=email
             
             flash('Reserva confirmada')
+
         except Exception as e:
             print(f"Error: {e}")
             mysql.connection.rollback()
