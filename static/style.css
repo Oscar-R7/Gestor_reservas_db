@@ -11,7 +11,10 @@ header {
     padding: 15px 40px;
     background: white;
 }
-
+#idlogo{
+    text-decoration: none;
+    color: inherit;
+}
 nav {
     display: flex;
     gap: 20px;
@@ -343,6 +346,7 @@ button{
     background: #e63946;
 }
 
+
 .card-reserva {
     border: 1px solid #ccc;
     padding: 20px;
@@ -400,3 +404,50 @@ button{
 
 .cerrar { float: right; cursor: pointer; font-size: 20px; color: #aaa; }
 
+.footer {
+    background-color: rgba(139, 70, 10, 0.796);;
+    color: white;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 14px;
+}

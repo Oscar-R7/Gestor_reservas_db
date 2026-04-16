@@ -140,6 +140,9 @@ input, select{
     align-items: stretch; 
 }
 
+.card:hover{
+transform:translateY(-8px);
+}
 .card{
     display: flex;
     flex-direction: column;
