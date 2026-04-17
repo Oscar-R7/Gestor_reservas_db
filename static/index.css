@@ -40,6 +40,11 @@ nav a{
     padding: 0 0 50px 0;
 
 }
+.title{
+    font-family: "Great Vibes", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
 
 .hero{
 height:70vh;

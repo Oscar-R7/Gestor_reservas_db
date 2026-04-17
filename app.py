@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, flash, session, redirect, url_for
 from flask_mysqldb import MySQL
 from functools import wraps
+import random
 
 # inicializa flask
 app = Flask(__name__)
@@ -85,7 +86,7 @@ def confirmar_reserva():
 
 @app.route('/reservas')
 def reservas():
-    # Verificar si el usuario está autenticado si no vuelve al inicio
+    numero = random.randint(100, 300)
     if 'usuario_id' not in session:
 
         flash("Por favor inicia sesión para ver tus reservas")
@@ -99,7 +100,7 @@ def reservas():
     mis_reservas = cur.fetchall()#trae los resultados de la consulta
     cur.close()
 
-    return render_template('reservas.html', lista_reservas=mis_reservas)
+    return render_template('reservas.html', lista_reservas=mis_reservas, numero = numero)
 
 @app.route('/eliminar_reserva/<int:id>')
 def eliminar_reserva(id):
